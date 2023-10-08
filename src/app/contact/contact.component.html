@@ -1,0 +1,28 @@
+
+
+<h1 *ngIf="userAge>20;else test">Hello from Contact Component</h1>
+<ng-template #test>
+    <h1>There is no data</h1>
+</ng-template>
+<table class="table text-center my-5" *ngIf="arr.length>0;else hambozo">
+    <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Id</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of arr ; let i=index; let x = last">  
+            <td>{{i+1}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.id}}</td>
+        </tr>
+    </tbody>
+
+</table>
+<ng-template #hambozo>
+    <h1>OOOOOOOOOOOOOOOOOOOOOPPPSS</h1>
+</ng-template>

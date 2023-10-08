@@ -1,0 +1,21 @@
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <ul>
+                <li>
+                    <a routerLink="phone">Phone Component</a>
+                </li>
+                <li>
+                    <a routerLink="laptop">Laptop Component</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <router-outlet></router-outlet>
+        </div>
+
+        <input [(ngModel)]="userName"/>
+        <h2>The name of the user is : {{userName}}</h2>
+    </div>
+</div>

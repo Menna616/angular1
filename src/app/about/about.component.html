@@ -1,0 +1,26 @@
+
+<table class="table text-center my-5">
+    <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Id</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of arr ; let i=index; let x = last">
+            
+            <td>{{i+1}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.id}}</td>
+        </tr>
+    </tbody>
+
+</table>
+<ul>
+    <li *ngFor="let friend of aboutFriends">
+        {{friend}}
+    </li>
+</ul>
